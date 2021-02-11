@@ -1,0 +1,30 @@
+<html>
+<body>
+Enter first number: <input type="text" id="myText1" >
+<p id="a"></p>
+<button onclick="flipInt()">Try it</button>
+   
+<script>
+function flipInt(){
+    var digit, result = 0
+  var n = document.getElementById("myText1").value;
+    while( n ){
+        digit = n % 10  //  Get right-most digit. Ex. 123/10 → 12.3 → 3
+        result = (result * 10) + digit  //  Ex. 123 → 1230 + 4 → 1234
+        n = n/10|0  //  Remove right-most digit. Ex. 123 → 12.3 → 12
+        document.getElementById("a").innerHTML = result;
+  
+    }  
+    
+}
+
+
+// Usage: 
+// alert(
+//   "Reversed number: " + flipInt( document.getElementById("myText1").value ) 
+// )
+
+</script>
+
+</body>
+</html>
