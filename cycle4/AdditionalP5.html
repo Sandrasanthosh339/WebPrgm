@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>mousechangeover</title>
+<script>
+function setNewImage(){
+document.getElementById("img1").src="smiley.jpeg";
+}
+function setOldImage(){
+document.getElementById("img1").src="doll.jpeg";
+}
+function changetext(obj,next){
+obj.textinnertext=text;
+}
+</script>
+</head>
+<body>
+<h2>change the content when a mouseover it</h2>
+<div>
+<ol>
+<img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="doll.jpg"/>
+<li onmouseover="changetext(this,'hello')"  onmouseout="changetext(this,'changetext')">change text</li>
+</ol>
+</body>
+</html>
