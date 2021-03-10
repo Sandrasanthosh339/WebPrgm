@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>quiz</title>
+</head>
+<script>
+function check(){
+var c=0;
+var q1=document.quiz.question1.value;
+var q2=document.quiz.question2.value;
+var q3=document.quiz.question3.value;
+var q4=document.quiz.question4.value;
+var q5=document.quiz.question5.value;
+if(q1=="TVM"){c++}
+if(q2=="KTM"){c++}
+if(q3=="EKM"){c++}
+if(q4=="KTM"){c++}
+if(q5=="PAL"){c++}
+document.write(c);
+}
+</script>
+<body>
+<form name="quiz" id="qu">
+<div>
+<p>1.what is the capital of kerala</p>
+<p><input type="radio" name="questio1" value="TVM">A. TVM</p>
+<p><input type="radio" name="questio2" value="EKM">B. EKM</p>
+<p><input type="radio" name="questio3" value="KTM">C. KTM</p>
+<p><input type="radio" name="questio4" value="PAl">D. PAL</p>
+</div>
+</div>
+<div>
+<p>2.The only district in Kerala which shares all it's boundary with other distric</p>
+<p><input type="radio" name="questio1" value="TVM">A. TVM</p>
+<p><input type="radio" name="questio2" value="EKM">B. EKM</p>
+<p><input type="radio" name="questio3" value="KTM">C. KTM</p>
+<p><input type="radio" name="questio4" value="PAl">D. PAL</p>
+</div>
+<div>
+<p>3.Mangalavanam bird sanctuary is situated in ?</p>
+<p><input type="radio" name="questio1" value="TVM">A. TVM</p>
+<p><input type="radio" name="questio2" value="EKM">B. EKM</p>
+<p><input type="radio" name="questio3" value="KTM">C. KTM</p>
+<p><input type="radio" name="questio4" value="PAl">D. PAL</p>
+</div>
+<div>
+<p>4. City of 3L's </p>
+<p><input type="radio" name="questio1" value="TVM">A. TVM</p>
+<p><input type="radio" name="questio2" value="EKM">B. EKM</p>
+<p><input type="radio" name="questio3" value="KTM">C. KTM</p>
+<p><input type="radio" name="questio4" value="PAl">D. PAL</p>
+</div>
+<div>
+<p>5.The district which has highest number of scheduled caste population in kerala</p>
+<p><input type="radio" name="questio1" value="TVM">A.TVM</p>
+<p><input type="radio" name="questio2" value="EKM">B.EKM</p>
+<p><input type="radio" name="questio3" value="KTM">C.KTM</p>
+<p><input type="radio" name="questio4" value="PAl">D.PAL</p>
+</div>
+<button onclick="check()">submit</button>
+</form>
+</body>
+</html>
